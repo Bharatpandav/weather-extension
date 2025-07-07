@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Weather Now",
+  "version": "1.0",
+  "description": "Get current weather using your location",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon.png"
+    }
+  },
+  "permissions": ["geolocation"],
+  "host_permissions": ["https://api.openweathermap.org/*"]
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Now</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Check Weather</h1>
+  <h2><img src="icons/icon.png" alt="Weather"> Current Weather</h2>
+
+  <!-- Unit Switch -->
+  <label>
+    <input type="checkbox" id="unitToggle"> Show in °F
+  </label>
+
+  <!-- Search -->
+  <div style="margin-top: 10px;">
+    <input type="text" id="cityInput" placeholder="Enter city name" />
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <h3>or</h3>
+  <button id="getWeatherBtn">Current Location</button>
+
+  <!-- Loader -->
+  <div id="loader" class="loader hidden"></div>
+
+  <!-- Weather Info -->
+  <div id="weatherInfo"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
